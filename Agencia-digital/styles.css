@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Saira", sans-serif;
+  font-style: normal;
+  color: rgb(51, 51, 51);
+}
+
+/* Telas de telefone */
+
+@media (max-width: 575px) {
+  body {
+    padding: 1.2rem;
+       background: #fff;
+    background: linear-gradient(
+      90deg,
+      rgb(118, 232, 240) 0%,
+      rgba(255, 255, 255, 1) 100%,
+      rgba(212, 199, 199, 1) 40%
+    );
+  }
+
+  header {
+    display: flex;
+  }
+
+  .titulo {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #about h1 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  #about p {
+    margin-bottom: 1rem;
+  }
+
+  #serviços h2 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  .services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 1.2rem;
+  }
+
+  .card-service {
+    padding-bottom: 1rem;
+  }
+
+  #depoimentos div p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+  }
+
+  footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+  }
+}
+
+/* Telas por médio grande Ex: tablet*/
+@media (min-width: 576px) {
+  body {
+    padding: 1.2rem;
+    background: #fff;
+    background: linear-gradient(
+      90deg,
+      rgb(145, 184, 211) 0%,
+      rgba(255, 255, 255, 1) 100%,
+      rgba(212, 199, 199, 1) 40%
+    );
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #about h1 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  #about p {
+    margin-bottom: 1rem;
+  }
+
+  #serviços h2 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  .services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 1.2rem;
+  }
+
+  .card-service {
+    padding-bottom: 1rem;
+  }
+
+  #depoimentos div p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+  }
+
+  footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+  }
+}
+
+
+/*Telas Grandes*/
+@media (min-width:900px) {
+
+  header {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+  img {
+    display: flex;
+  }
+
+  .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #about h1 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  #about p {
+    margin-bottom: 1rem;
+  }
+
+  #serviços h2 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  .services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 1.2rem;
+  }
+
+  .card-service {
+    padding-bottom: 1rem;
+  }
+
+  #depoimentos div p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+  }
+
+  footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+  }
+}
+ 
