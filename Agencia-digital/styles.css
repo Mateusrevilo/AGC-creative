@@ -7,25 +7,18 @@
   color: rgb(51, 51, 51);
 }
 
-/* Telas de telefone */
-
-@media (max-width: 575px) {
-  body {
-    padding: 1.2rem;
-       background: #fff;
-    background: linear-gradient(
-      90deg,
-      rgb(118, 232, 240) 0%,
-      rgba(255, 255, 255, 1) 100%,
-      rgba(212, 199, 199, 1) 40%
-    );
-  }
-
+/* Telas de telefone pequenos*/
+@media (max-width: 600px) {
   header {
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.2rem;
   }
 
-  .titulo {
+  header h2 {
     display: none;
   }
 
@@ -33,191 +26,203 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
     gap: 1rem;
   }
 
+  #about {
+    padding: 1.2rem;
+    gap: 1em;
+    padding-bottom: 2.2rem;
+  }
+
   #about h1 {
-    margin-bottom: 1rem;
     text-transform: uppercase;
   }
 
   #about p {
-    margin-bottom: 1rem;
+    padding: 1rem;
   }
 
-  #serviços h2 {
-    margin-bottom: 1rem;
-    text-transform: uppercase;
+  #serviços {
+    padding: 1.2rem;
+    gap: 1em;
+    padding-bottom: 2.2rem;
   }
 
   .services-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 1.2rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    padding-bottom: 2.2rem;
+    gap: 1.2rem;
   }
 
-  .card-service {
-    padding-bottom: 1rem;
+  #depoimentos {
+    padding: 1rem;
   }
 
-  #depoimentos div p {
+  .dep {
+    padding: 2.2rem;
+  }
+  footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 1em;
+    padding: 1rem;
   }
 
-  footer div {
+  .contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1.2rem;
   }
 }
 
-/* Telas por médio grande Ex: tablet*/
-@media (min-width: 576px) {
-  body {
-    padding: 1.2rem;
-    background: #fff;
-    background: linear-gradient(
-      90deg,
-      rgb(145, 184, 211) 0%,
-      rgba(255, 255, 255, 1) 100%,
-      rgba(212, 199, 199, 1) 40%
-    );
-  }
-
+@media (min-width: 601px) and (max-width: 900px) {
   header {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content:center;
     align-items: center;
+    
   }
 
-  .titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  img {
+  .titulo{
     display: none;
   }
 
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  #about h1 {
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-  }
-
-  #about p {
-    margin-bottom: 1rem;
-  }
-
-  #serviços h2 {
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-  }
-
-  .services-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 1.2rem;
-  }
-
-  .card-service {
-    padding-bottom: 1rem;
-  }
-
-  #depoimentos div p {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1em;
-  }
-
-  footer div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1.2rem;
-  }
-}
-
-
-/*Telas Grandes*/
-@media (min-width:900px) {
-
-  header {
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    align-items: center;
-  }
-  img {
-    display: flex;
-  }
-
-  .titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
 
   nav {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    text-transform: uppercase;
+   
+  }
+
+  #about {
+    padding: 1.2rem;
+    gap: 1em;
+    padding-bottom: 2.2rem;
   }
 
   #about h1 {
-    margin-bottom: 1rem;
     text-transform: uppercase;
   }
 
   #about p {
-    margin-bottom: 1rem;
+    padding: 1rem;
   }
 
-  #serviços h2 {
-    margin-bottom: 1rem;
-    text-transform: uppercase;
+  #serviços {
+    padding: 1.2rem;
+    gap: 1em;
+    padding-bottom: 2.2rem;
   }
 
   .services-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 1.2rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    padding-bottom: 2.2rem;
+    gap: 1.2rem;
   }
 
-  .card-service {
-    padding-bottom: 1rem;
+  #depoimentos {
+    padding: 1rem;
   }
 
-  #depoimentos div p {
+  .dep {
+    padding: 2.2rem;
+  }
+  footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 1em;
+    padding: 1rem;
   }
 
-  footer div {
+  .contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1.2rem;
   }
 }
  
+@media (min-width:901px){
+  
+ header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    
+  }
+
+ 
+
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-transform: uppercase;
+   
+  }
+
+  #about {
+    padding: 1.2rem;
+    gap: 1em;
+    padding-bottom: 2.2rem;
+  }
+
+  #about h1 {
+    text-transform: uppercase;
+  }
+
+  #about p {
+    padding: 1rem;
+  }
+
+  #serviços {
+    padding: 1.2rem;
+    gap: 1em;
+    padding-bottom: 2.2rem;
+  }
+
+  .services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    padding-bottom: 2.2rem;
+    gap: 1.2rem;
+  }
+
+  #depoimentos {
+    padding: 1rem;
+  }
+
+  .dep {
+    padding: 2.2rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
