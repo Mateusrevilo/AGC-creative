@@ -1,0 +1,227 @@
+@use 'variaveis';
+@use 'mixins';
+
+@media (max-width: 600px) {
+    .header {
+        width: 100%;
+        @include mixins.flexColumn;
+        padding-bottom: variaveis.$preenchimento-btm;
+    }
+
+    .header__titulo {
+        display: none;
+    }
+
+    .nav {
+        @include mixins.nav;
+        text-transform:variaveis.$text-principal;
+        gap: 1em;
+    }
+
+    .about-section {
+        padding: 1.2rem;
+        gap: 1em;
+        padding-bottom: variaveis.$preenchimento-btm;
+    }
+
+    .about-section__titulo {
+        text-transform: uppercase;
+    }
+
+    .about-section__descricao {
+        padding: 1rem;
+    }
+
+    .servicos-section {
+        padding: 1.2rem;
+        gap: 1em;
+        padding-bottom: variaveis.$preenchimento-btm;
+    }
+
+    .services-section__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+        padding-bottom: variaveis.$padding-btmsec;
+        gap: 1.2rem;
+    }
+
+    .depoimentos-section {
+        padding: 1rem;
+    }
+
+    .depoimentos-card {
+        padding: variaveis.$preenchimento-btm;
+    }
+
+    .depoimentos-card__autor {
+        padding: 0.8rem;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .header {
+        width: 100%;
+       @include mixins.flexRow;
+        padding-bottom: variaveis.$padding-secundario;
+    }
+
+    .header__titulo {
+        display: none;
+    }
+
+    .nav {
+        @include mixins.nav;
+        text-transform: uppercase;
+        gap: 1em;
+    }
+
+    .about-section {
+        padding: 1.2rem;
+        gap: 1em;
+        padding-bottom: variaveis.$preenchimento-btm;
+    }
+
+    .about-section__titulo {
+        text-transform: uppercase;
+    }
+
+    .about-section__descricao {
+        padding: 1rem;
+    }
+
+    .servicos-section {
+        padding: 1.2rem;
+        gap: 1em;
+        padding-bottom: variaveis.$preenchimento-btm;
+    }
+
+    .services-section__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+        padding-bottom: 1rem;
+        gap: 1.2rem;
+    }
+
+    .depoimentos-section {
+        padding: 1rem;
+    }
+
+    .depoimentos-card {
+        padding: 2.2rem;
+    }
+
+    .depoimentos-card__autor {
+        padding: 0.8rem;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+}
+
+/*telas maiores*/
+@media (min-width: 901px) {
+     .header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: variaveis.$preenchimento-btm;
+    }
+
+
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        gap: 1em;
+    }
+
+    .about-section {
+        padding: 1.2rem;
+        gap: 1em;
+        padding-bottom: 2.2rem;
+    }
+
+    .about-section__titulo {
+        text-transform: uppercase;
+    }
+
+    .about-section__descricao {
+        padding: 1rem;
+    }
+
+    .servicos-section {
+        padding: 1.2rem;
+        gap: 1em;
+        padding-bottom: variaveis.$preenchimento-btm;
+    }
+
+    .services-section__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+        padding-bottom: 1rem;
+        gap: 1.2rem;
+    }
+
+    .depoimentos-section {
+        padding: 1rem;
+    }
+
+    .depoimentos-card {
+        padding: variaveis.$preenchimento-btm;
+    }
+
+    .depoimentos-card__autor {
+        padding: 0.8rem;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+ 
